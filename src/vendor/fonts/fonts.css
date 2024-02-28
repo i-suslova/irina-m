@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/georgia/Georgia.woff2) format('woff2'),
+    url(../fonts/georgia/Georgia.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/georgia/Georgia-BoldItalic.woff2) format('woff2'),
+    url(../fonts/georgia/Georgia-BoldItalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../fonts/georgia/Georgia-Bold.woff2) format('woff2'),
+    url(../fonts/georgia/Georgia-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/georgia/Georgia-BoldItalic.woff2) format('woff2'),
+    url(../fonts/georgia/Georgia-BoldItalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/openSans/OpenSans-Light.woff2) format('woff2'),
+    url(../fonts/openSans/OpenSans-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/openSans/OpenSans-Regular.woff2) format('woff2'),
+    url(../fonts/openSans/OpenSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/openSans/OpenSans-SemiBold.woff2) format('woff2'),
+    url(../fonts/openSans/OpenSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/openSans/OpenSans-SemiBoldItalic.woff2) format('woff2'),
+    url(../fonts/openSans/OpenSans-SemiBoldItalic.woff) format('woff');
+}

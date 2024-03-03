@@ -2,7 +2,7 @@ import React from 'react';
 
 import './WhatsAppLink.css';
 
-const { phoneNumber } = require('../../components/config');
+const phoneNumber = process.env.REACT_APP_PHONE;
 
 const WhatsAppLink = () => {
 

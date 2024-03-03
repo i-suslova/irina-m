@@ -2,7 +2,7 @@ import React from 'react';
 
 import './TelegramLink.css';
 
-const { phoneNumber } = require('../../components/config');
+const phoneNumber = process.env.REACT_APP_PHONE;
 
 const TelegramLink = () => {
 

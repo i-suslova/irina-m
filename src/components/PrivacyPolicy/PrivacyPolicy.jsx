@@ -1,20 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import './PrivacyPolicy.css';
 
+import useHeaderHeight from '../../hooks/useHeaderHeight';
+
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
+  const headerHeight = useHeaderHeight();
 
   const handleGoBack = () => {
     navigate(-1);
   };
 
+  useEffect(() => {
+    const header = document.querySelector('.header');
+    const headerHeight = header ? header.offsetHeight : 0;
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
+
   return (
     <main>
       <section className='privacy-policy'>
 
-        <div className='privacy-policy__wrapper'>
+        <div className='privacy-policy__wrapper'
+          style={{ paddingTop: `${headerHeight}px` }}
+        >
 
           <h2 className='privacy-policy__title'>Политика в отношении обработки персональных данных</h2>
           <p className='privacy-policy__text'>1. Общие положения Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального закона от 27.07.2006. №152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению безопасности персональных данных, предпринимаемые Ирина Медведева (далее – Оператор).

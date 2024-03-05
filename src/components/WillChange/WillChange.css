@@ -45,7 +45,7 @@
 }
 
 .will-change__block-title {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.35;
     color: #203b3b;
     padding-bottom: 13px;
@@ -127,7 +127,6 @@
     .will-change__blocks-container {
         width: 500px;
         row-gap: 30px;
-        padding: 0 10px;
     }
 }
 
@@ -156,7 +155,7 @@
     .will-change__number {
         width: 30px;
         height: 30px;
-        font-size: 16px;
+        font-size: 1em;
         line-height: 30px;
     }
 }

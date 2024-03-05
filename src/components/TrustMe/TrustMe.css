@@ -59,7 +59,7 @@
 
 .trust-me__number {
     font-weight: 900;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.55;
     text-align: left;
     margin: 0;
@@ -71,7 +71,7 @@
     font-family: 'Georgia', serif;
     font-weight: 400;
     color: rgb(32, 59, 59);
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.55;
     text-align: left;
     margin: 0;

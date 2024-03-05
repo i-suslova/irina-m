@@ -67,10 +67,6 @@
     padding: 6px 0;
 }
 
-.process__quote {
-    margin: 30px 0;
-}
-
 .process__quote-line {
     width: 100%;
     height: 1px;
@@ -85,7 +81,7 @@
 .process__quote-title {
     background-color: #c83649;
     font-family: 'Georgia', serif;
-    font-size: 16px;
+    font-size: 1em;
     display: inline-block;
     color: #fff;
     font-weight: 900;
@@ -132,7 +128,7 @@
     }
 
     .process__text {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     .process__quote {

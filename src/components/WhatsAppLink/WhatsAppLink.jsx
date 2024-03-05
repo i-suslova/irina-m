@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import './WhatsAppLink.css';
+import useHeaderHeight from '../../hooks/useHeaderHeight';
 
 const phoneNumber = process.env.REACT_APP_PHONE;
 
@@ -11,17 +12,36 @@ const WhatsAppLink = () => {
     window.open(whatsappUrl, '_blank');
   };
 
+  const headerHeight = useHeaderHeight();
+
+  useEffect(() => {
+    const header = document.querySelector('.header');
+    const headerHeight = header ? header.offsetHeight : 0;
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }, []);
+
   return (
     <div className='whats-app-link'>
-      <div className='whats-app-link__container'></div>
-      <h2 className='whats-app-link__title'>
-        WhatsApp  {phoneNumber}
-      </h2>
-      <p className='whats-app-link__text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolore magni recusandae! Labore veniam adipisci fuga! Iusto nostrum nobis vitae debitis quam vero, maiores a repudiandae quia reprehenderit voluptatum dolore.</p>
-      <button className='whats-app-link__btn hover'
-        onClick={handleWhatsAppClick}>
-        НАПИШИТЕ МНЕ
-      </button>
+
+      <div className='whats-app__wrapper'
+        style={{ paddingTop: `${headerHeight}px` }}
+      >
+
+        <div className='whats-app-link__container'></div>
+        <h2 className='whats-app-link__title'>
+          WhatsApp  {phoneNumber}
+        </h2>
+        <p className='whats-app-link__text'>Вы можете задать вопрос
+          <br /> или записаться на консультацию:</p>
+        <button className='whats-app-link__btn hover'
+          onClick={handleWhatsAppClick}>
+          НАПИШИТЕ МНЕ
+        </button>
+      </div>
     </div>
   );
 };

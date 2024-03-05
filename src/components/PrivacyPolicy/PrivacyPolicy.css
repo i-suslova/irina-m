@@ -9,10 +9,14 @@
 }
 
 .privacy-policy__wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
 }
 
 .privacy-policy__title {

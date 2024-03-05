@@ -39,7 +39,7 @@
 
 .reviews__block {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 40px;
 }
 
@@ -51,7 +51,7 @@
     text-align: left;
     margin: 0;
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.55;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .reviews__author {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.35;
     font-family: 'Georgia', serif;
     font-weight: 600;

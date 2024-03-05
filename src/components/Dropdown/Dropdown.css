@@ -17,15 +17,15 @@
     background-color: rgb(237, 241, 231);
     color: #11201e;
     border: none;
-    padding: 5px 10px ;
-    font-size: 15px;
+    padding: 5px 10px;
+    font-size: 0.9375em;
     font-weight: 700;
     cursor: pointer;
 }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width:610px) {
     .dropdown {
         padding: 0;
-        align-items: center;     
+        align-items: center;
     }
 }

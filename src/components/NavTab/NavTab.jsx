@@ -14,21 +14,16 @@ const NavTab = () => {
 
   const navItems = [
     {
-      label: 'О КОУЧИНГЕ',
+      label: 'О ГЛАВНОМ',
       path: '/about-project',
       content: [
 
         { item: 'Для кого', id: "for-whom" },
         { item: 'Что изменится', id: "will-change" },
         { item: 'Как проходят коуч-сессии', id: "process" },
+        { item: 'Часто задаваемые вопросы', id: "questions" },
       ]
     },
-    {
-      label: 'СТОИМОСТЬ',
-      path: '/price',
-      id: "price",
-    },
-
     {
       label: 'ОБО МНЕ',
       path: '/about-me',
@@ -38,6 +33,11 @@ const NavTab = () => {
         { item: 'Дипломы и сертификаты', id: 'my-diplomas' },
         { item: 'Отзывы', id: 'reviews' },
       ]
+    },
+    {
+      label: 'СТОИМОСТЬ',
+      path: '/price',
+      id: "price",
     },
     { label: 'КОНТАКТЫ', path: '/contacts', id: "contacts", },
   ];

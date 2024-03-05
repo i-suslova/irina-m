@@ -61,4 +61,8 @@
   .footer__copyright {
     font-size: 12px;
   }
+
+  .footer__btn {
+    padding-top: 10px;
+  }
 }

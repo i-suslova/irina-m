@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './Reviews.css';
-import ArrowRight from '../../images/ArrowRight.svg';
-import ArrowLeft from '../../images/ArrowLeft.svg';
+import ArrowRightDark from '../../images/ArrowRightDark.svg';
+import ArrowRightLight from '../../images/ArrowRightLight.svg';
+import ArrowLeftDark from '../../images/ArrowLeftDark.svg';
+import ArrowLeftLight from '../../images/ArrowLeftLight.svg';
+
 import Point from '../../images/Point.svg';
 
-const Reviews = () => {
+
+const Reviews = ({ themeClass, isDarkMode }) => {
     const reviewsData = [
         {
             text: (
@@ -106,32 +110,32 @@ const Reviews = () => {
     };
 
     return (
-        <section className='reviews' id='reviews'>
+        <section className={`reviews ${themeClass}`} id='reviews'>
             <div className='reviews__container'>
-                <h2 className='reviews__title'>Отзывы</h2>
+                <h2 className={`reviews__title ${themeClass}`}>Отзывы</h2>
                 <div className='reviews__wrapper'>
                     <div className='reviews__block'>
                         <img
-                            className='reviews__img-arrow hover'
-                            src={ArrowLeft}
+                            className={`reviews__img-arrow hover ${themeClass}`}
+                            src={isDarkMode ? ArrowLeftDark : ArrowLeftLight}
                             alt='значок стрелки налево'
                             onClick={() => handleArrowClick('prev')}
                         />
-                        <p className='reviews__text'>{reviewsData[currentIndex].text}</p>
+                        <div className={`reviews__text ${themeClass}`}>{reviewsData[currentIndex].text}</div>
                         <img
-                            className='reviews__img-arrow hover'
-                            src={ArrowRight}
+                            className={`reviews__img-arrow hover ${themeClass}`}
+                            src={isDarkMode ? ArrowRightDark : ArrowRightLight}
                             alt='значок стрелки направо'
                             onClick={() => handleArrowClick('next')}
                         />
                     </div>
-                    <h3 className='reviews__author'>{reviewsData[currentIndex].author}</h3>
+                    <h3 className={`reviews__author ${themeClass}`}>{reviewsData[currentIndex].author}</h3>
 
                     <div className="reviews__point-group">
                         {reviewsData.map((review, index) => (
                             <img
                                 key={index}
-                                className={`reviews__img-point hover ${index === currentIndex ? 'active' : ''}`}
+                                className={`reviews__img-point hover ${index === currentIndex ? 'active' : ''} ${themeClass}`}
                                 src={Point}
                                 alt='значок точки'
                                 onClick={() => handlePointClick(index)}

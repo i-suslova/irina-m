@@ -5,7 +5,7 @@ import useHeaderHeight from '../../hooks/useHeaderHeight';
 
 const phoneNumber = process.env.REACT_APP_PHONE;
 
-const WhatsAppLink = () => {
+const WhatsAppLink = ({ themeClass }) => {
 
   const handleWhatsAppClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
@@ -25,19 +25,19 @@ const WhatsAppLink = () => {
   }, []);
 
   return (
-    <div className='whats-app-link'>
+    <div className={`whats-app-link ${themeClass}`}>
 
       <div className='whats-app__wrapper'
         style={{ paddingTop: `${headerHeight}px` }}
       >
 
-        <div className='whats-app-link__container'></div>
-        <h2 className='whats-app-link__title'>
+        <div className={`whats-app-link__container ${themeClass}`}></div>
+        <h2 className={`whats-app-link__title ${themeClass}`}>
           WhatsApp  {phoneNumber}
         </h2>
-        <p className='whats-app-link__text'>Вы можете задать вопрос
+        <p className={`whats-app-link__text ${themeClass}`}>Вы можете задать вопрос
           <br /> или записаться на консультацию:</p>
-        <button className='whats-app-link__btn hover'
+        <button className={`whats-app-link__btn hover ${themeClass}`}
           onClick={handleWhatsAppClick}>
           НАПИШИТЕ МНЕ
         </button>

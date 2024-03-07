@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.privacy-policy.dark-theme {
+  background-color: #383737;
+}
+
 .privacy-policy__wrapper {
   width: 100%;
   max-width: 1140px;
@@ -29,6 +33,10 @@
   margin: 30px 30px 0;
 }
 
+.privacy-policy__title.dark-theme {
+  color: #d7d7d7;
+}
+
 .privacy-policy__text {
   color: #000000;
   font-size: 18px;
@@ -36,6 +44,10 @@
   line-height: normal;
   text-align: left;
   margin: 30px;
+}
+
+.privacy-policy__text.dark-theme {
+  color: #d7d7d7;
 }
 
 .privacy-policy__button {
@@ -46,4 +58,9 @@
   text-align: center;
   text-decoration: none;
   margin: 10px auto 10px;
+}
+
+.privacy-policy__button.dark-theme {
+  background-color: #c9cac9;
+  color: #ed410b;
 }

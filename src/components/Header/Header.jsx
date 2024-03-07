@@ -3,33 +3,38 @@ import { useNavigate } from 'react-router-dom';
 
 import './Header.css';
 
-// import LightTheme from '../../images/LightTheme.svg';
-// import DarkTheme from '../../images/DarkTheme.svg';
 import NavTab from '../NavTab/NavTab';
-import logo from '../../images/Logo.svg';
+import LightTheme from '../../images/LightTheme.svg';
+import DarkTheme from '../../images/DarkTheme.svg';
+import logoDark from '../../images/logoDark.png';
+import logoLight from '../../images/logoLight.png';
 
-const Header = () => {
- 
+const Header = ({ themeClass, isDarkMode, toggleTheme }) => {
   const navigate = useNavigate();
 
-  const handleGoMain= () => {
-    navigate('/');}
+  const handleGoMain = () => {
+    navigate('/');
+  }
 
-    return (
-      <header className='header'>
-        <div className='header__logo hover'
-          onClick={handleGoMain}
-        >
-          {/* <img src={LightTheme} alt='Переключатель темы' /> */}
-          {/* <img src={DarkTheme} alt='Переключатель темы' /> */}
-          <img src={logo} alt='логотип сайта' />
-        </div>
-        <NavTab />
-      </header>
+  return (
 
-    )
-  };
+    <header className={`header ${themeClass}`}>
 
-  export default Header;
+      <div className='header__logo hover' onClick={handleGoMain}>
+        <img src={isDarkMode ? logoLight : logoDark} alt='логотип сайта' />
+      </div>
+
+      <NavTab themeClass={themeClass} />
+
+      <div className='header__theme hover' onClick={toggleTheme}>
+        <img src={isDarkMode ? LightTheme : DarkTheme} alt='Toggle Theme' />
+      </div>
+
+    </header>
+  )
+};
+
+export default Header;
+
 
 

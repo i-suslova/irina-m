@@ -11,6 +11,10 @@
     background-color: #fcf7f7;
 }
 
+.whats-app-link.dark-theme {
+    background-color: #211d1d;
+}
+
 .whats-app-link__title {
     width: 100%;
     width: 400px;
@@ -24,6 +28,11 @@
     background-color: rgba(240, 146, 139, 0.2);
     z-index: 10;
     margin-top: 30px;
+}
+
+.whats-app-link__title.dark-theme {
+    color: #c9cac9;
+    background-color: rgb(228 215 214 / 20%);
 }
 
 .whats-app__wrapper {
@@ -43,11 +52,15 @@
     width: 100%;
     height: 100%;
     background-position: center;
-    background-image: url("../../images/contactsImg.png");
+    background-image: url("../../images/fonLight.png");
     background-repeat: no-repeat;
     margin: 0 auto;
     background-color: #57887f;
     filter: blur(2px);
+}
+
+.whats-app-link__container.dark-theme {
+    background-image: url("../../images/fonDark.jpg");
 }
 
 .whats-app-link__text {
@@ -61,6 +74,10 @@
     margin: 0;
     z-index: 10;
     text-align: center;
+}
+
+.whats-app-link__text.dark-theme {
+    color: #c9cac9;
 }
 
 .whats-app-link__btn {
@@ -79,6 +96,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.whats-app-link__btn.dark-theme {
+    filter: brightness(90%);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 610px) {

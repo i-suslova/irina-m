@@ -9,6 +9,10 @@
     background-color: #f0eae8
 }
 
+.will-change.dark-theme {
+    background-color: #191818;
+  }
+
 .will-change__wrapper {
     width: 100%;
     max-width: 1140px;
@@ -29,6 +33,10 @@
     padding-bottom: 105px;
     margin: 0;
 }
+
+.will-change__title.dark-theme {
+    color: #c9cac9;
+  }
 
 .will-change__blocks-container {
     display: grid;
@@ -52,6 +60,10 @@
     margin: 0;
 }
 
+.will-change__block-title.dark-theme {
+    color: #e8e9e8;
+  }
+
 .will-change__number {
     font-family: 'Georgia', serif;
     font-weight: 600;
@@ -65,14 +77,23 @@
     line-height: 60px;
 }
 
+.will-change__number.dark-theme {
+    color: #e8e9e8;
+    background-color: #383737;
+  }
+
 .will-change__text {
+    font-family: 'Georgia', serif;
     margin: 0;
     color: #203b3b;
     font-size: 18px;
     font-weight: 400;
-    font-family: 'Open Sans';
     line-height: 1.55;
 }
+
+.will-change__text.dark-theme {
+    color: #e8e9e8;
+  }
 
 @media screen and (max-width: 1170px) {
     .will-change__wrapper {

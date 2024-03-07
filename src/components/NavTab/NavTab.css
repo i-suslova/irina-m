@@ -8,7 +8,11 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  background: #57887f;
+  background-color: #57887f;
+}
+
+.nav-tab__list.dark-theme {
+  background-color: #6d8480;
 }
 
 .nav-tab__item {
@@ -25,8 +29,17 @@
   cursor: default;
 }
 
+.nav-tab__link.dark-theme {
+  background-color: #6d8480;
+  color: #383737;
+}
+
 .nav-tab__link:hover {
-  color: #000;
+  color: #383737;
+}
+
+.nav-tab__link.dark-theme:hover {
+  color: #ffffff;
 }
 
 @media screen and (max-width: 770px) {

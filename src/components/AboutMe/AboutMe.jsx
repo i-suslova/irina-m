@@ -7,15 +7,18 @@ import Reviews from '../Reviews/Reviews';
 
 import './AboutMe.css';
 
-const AboutMe = () => {
+const AboutMe = ({ themeClass, isDarkMode }) => {
 
   return (
 
     <nav className='about-me' >
-      <TrustMe />
-      <MyEducation />
-      <MyDiplomas />
-      <Reviews />
+      <TrustMe themeClass={themeClass} />
+      <MyEducation themeClass={themeClass} />
+      <MyDiplomas themeClass={themeClass} />
+      <Reviews
+        themeClass={themeClass}
+        isDarkMode={isDarkMode}
+      />
     </nav>
 
   );

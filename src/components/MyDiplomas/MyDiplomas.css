@@ -10,6 +10,10 @@
     background-color: #fcf7f7;
 }
 
+.my-diplomas.dark-theme {
+    background-color: #383737;
+}
+
 .my-diplomas__container {
     width: 100%;
     max-width: 1140px;
@@ -32,6 +36,10 @@
     margin: 0 auto;
 }
 
+.my-diplomas__title.dark-theme {
+    color: #d7d7d7;
+}
+
 .my-diplomas__block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -40,6 +48,11 @@
 
 .my-diplomas__img {
     border-radius: 5px;
+}
+
+.my-diplomas__img.dark-theme {
+    filter: brightness(80%);
+    box-shadow: 0 0 10px rgb(3 3 3 / 80%);
 }
 
 @media screen and (max-width: 1170px) {

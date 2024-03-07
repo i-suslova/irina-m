@@ -7,6 +7,10 @@
   z-index: 10;
 }
 
+.footer.dark-theme {
+  background-color: #6d8480;
+}
+
 .footer__wrapper {
   margin: 0 auto;
   max-width: 1140px;
@@ -26,6 +30,10 @@
   padding: 0;
 }
 
+.footer__title.dark-theme {
+  color: #0c0c0c;
+}
+
 .footer__copyright {
   color: #ffffff;
   font-size: 20px;
@@ -34,6 +42,10 @@
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.footer__copyright.dark-theme {
+  color: #0c0c0c;
 }
 
 .footer__btn {
@@ -49,6 +61,11 @@
   color: rgb(240, 234, 232) !important;
   text-decoration: none;
   background-color: #57887f;
+}
+
+.footer__btn.dark-theme {
+  background-color: #6d8480;
+  color: #0c0c0c !important;
 }
 
 @media screen and (max-width: 885px) {

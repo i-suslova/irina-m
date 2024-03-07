@@ -10,6 +10,10 @@
     background-color: #fcf7f7;
 }
 
+.trust-me.dark-theme {
+    background-color: #383737;
+}
+
 .trust-me__container {
     width: 100%;
     max-width: 1140px;
@@ -27,6 +31,12 @@
     height: 560px;
     border-radius: 5px;
     object-fit: cover;
+    box-shadow: 0 0 25px rgb(104 99 99);
+}
+
+.trust-me__img.dark-theme {
+    filter: brightness(80%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 .trust-me__title {
@@ -37,6 +47,10 @@
     line-height: 1.23;
     text-align: center;
     margin: 0 auto;
+}
+
+.trust-me__title.dark-theme {
+    color: #d7d7d7;
 }
 
 .trust-me__line {
@@ -67,6 +81,10 @@
     padding-right: 5px;
 }
 
+.trust-me__number.dark-theme {
+    color: #d7d7d7;
+}
+
 .trust-me__text {
     font-family: 'Georgia', serif;
     font-weight: 400;
@@ -75,6 +93,10 @@
     line-height: 1.55;
     text-align: left;
     margin: 0;
+}
+
+.trust-me__text.dark-theme {
+    color: #f5f5f5;
 }
 
 @media screen and (max-width: 1170px) {

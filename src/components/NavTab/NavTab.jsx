@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import './NavTab.css';
 import Dropdown from '../Dropdown/Dropdown';
 
-const NavTab = () => {
+const NavTab = ({ themeClass}) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -77,9 +77,9 @@ const NavTab = () => {
   };
 
   return (
-    <nav className='nav-tab' >
+    <nav className={`nav-tab ${themeClass}`}>
 
-      <ul className='nav-tab__list'>
+      <ul className={`nav-tab__list ${themeClass}`}>
         {navItems.map((item, index) => (
           <li
             key={index}
@@ -93,13 +93,15 @@ const NavTab = () => {
               {item.content ? (
 
                 // у элемента есть content, используем Dropdown
-                <button className='nav-tab__link'
+                // <button className='nav-tab__link'
+                <button className={`nav-tab__link ${themeClass}`}
                   onClick={() => handleItemClick(item.path, item.id)}
                 >{item.label}</button>
               ) : (
                 // у элемента нет content, переходите напрямую
-                <button
-                  className='nav-tab__link'
+                // <button
+                  // className='nav-tab__link'
+                  <button className={`nav-tab__link ${themeClass}`}
                   onClick={() => navigate(item.path)}
                 >
                   {item.label}

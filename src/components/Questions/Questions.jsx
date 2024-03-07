@@ -3,7 +3,7 @@ import './Questions.css';
 import PlusWhite from '../../images/PlusWhite.svg';
 import PlusBlack from '../../images/PlusBlack.svg';
 
-const Questions = () => {
+const Questions = ({ themeClass, isDarkMode }) => {
 
     const [hovered, setHovered] = useState(null);
     const [openQuestions, setOpenQuestions] = useState([]);
@@ -69,30 +69,29 @@ const Questions = () => {
     ];
 
     return (
-        <section className='questions' id='questions'>
+        <section className={`questions ${themeClass}`} id='questions'>
             <div className='questions__wrapper'>
-                <h2 className='questions__title'>Часто задаваемые вопросы:</h2>
+                <h2 className={`questions__title ${themeClass}`}>Часто задаваемые вопросы:</h2>
                 <div className='questions__blocks-container'>
                     {questionsData.map((question) => (
                         <div className='questions__block' key={question.id}>
                             <div
-                                className={`questions__header ${openQuestions.includes(question.id) ? 'active' : ''}`}
+                                className={`questions__header ${openQuestions.includes(question.id) ? 'active' : ''} ${themeClass}`}
                                 onClick={() => handleTitleClick(question.id)}
 
                                 onMouseEnter={() => handleItemHover(question.id, true)}
                                 onMouseLeave={() => handleItemHover(question.id, false)}
                             >
-                                <h3 className='questions__block-title'>
+                                <h3 className={`questions__block-title ${themeClass}`}>
                                     {question.title}</h3>
                                 <img
-                                    className={`questions__img-plus  ${hovered === question.id ? 'active' : ''}`}
-                                    src={hovered === question.id ? PlusWhite : PlusBlack}
+                                    className={`questions__img-plus ${hovered === question.id ? 'active' : ''} ${themeClass}`}
+                                    src={hovered === question.id ? (isDarkMode ? PlusBlack : PlusWhite) : (isDarkMode ? PlusWhite : PlusBlack)}
                                     alt={hovered === question.id ? 'значок плюса чёрного цвета' : 'значок плюса белого цвета'}
                                 />
-
                             </div>
                             {openQuestions.includes(question.id) && (
-                                <p className='questions__text'>{question.text}</p>
+                                <p className={`questions__text ${themeClass}`}>{question.text}</p>
                             )}
                         </div>
                     ))}

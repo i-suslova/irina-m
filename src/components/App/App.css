@@ -5,7 +5,7 @@
    font-size: 16px;
    padding: 0;
    margin: auto;
-   color: #000000;
+   color: #000;
    position: relative;
    display: flex;
    flex-direction: column;
@@ -26,3 +26,4 @@
  a {
    transition: 0.3s ease;
  }
+

@@ -2,46 +2,46 @@ import React from 'react';
 
 import './WillChange.css';
 
-const WillChange = () => {
+const WillChange = ({ themeClass}) => {
 
   return (
-    <section className='will-change' id='will-change'>
+    <section className={`will-change ${themeClass}`} id='will-change'>
 
       <div className='will-change__wrapper'>
-        <h2 className='will-change__title'>Что изменится после коуч-сессий</h2>
+        <h2 className={`will-change__title ${themeClass}`}>Что изменится после коуч-сессий</h2>
         <div className='will-change__blocks-container'>
           <div className='will-change__block'>
-            <div className='will-change__number'>1</div>
+            <div className={`will-change__number ${themeClass}`}>1</div>
             <div>
-              <h3 className='will-change__block-title'>Эффективность</h3>
-              <p className='will-change__text'>Обретёте навыки эффективного распоряжения своим временем.
+              <h3 className={`will-change__block-title ${themeClass}`}>Эффективность</h3>
+              <p className={`will-change__text ${themeClass}`}>Обретёте навыки эффективного распоряжения своим временем.
                 <br /> Появится понимание куда и зачем идти, что и как делать.</p>
             </div>
           </div>
 
           <div className='will-change__block'>
-            <div className='will-change__number'>2</div>
+            <div className={`will-change__number ${themeClass}`}>2</div>
             <div>
-              <h3 className='will-change__block-title'>Новый уровень</h3>
-              <p className='will-change__text'>
+              <h3 className={`will-change__block-title ${themeClass}`}>Новый уровень</h3>
+              <p className={`will-change__text ${themeClass}`}>
                 Поймёте, как можно гармонично развиваться в своих сферах жизни.
                 <br />Найдёте путь развития в профессии и выйдете на новый финансовый уровень.</p>
             </div>
           </div>
 
           <div className='will-change__block'>
-            <div className='will-change__number'>3</div>
+            <div className={`will-change__number ${themeClass}`}>3</div>
             <div>
-              <h3 className='will-change__block-title'>Отношения</h3>
-              <p className='will-change__text'>Научитесь слушать себя и поймете, в чём заключается Ваша сила.</p>
+              <h3 className={`will-change__block-title ${themeClass}`}>Отношения</h3>
+              <p className={`will-change__text ${themeClass}`}>Научитесь слушать себя и поймете, в чём заключается Ваша сила.</p>
             </div>
           </div>
 
           <div className='will-change__block'>
-            <div className='will-change__number'>4</div>
+            <div className={`will-change__number ${themeClass}`}>4</div>
             <div>
-              <h3 className='will-change__block-title'>Гармония</h3>
-              <p className='will-change__text'>Найдете свои ответы на том уровне, куда еще не заглядывали.
+              <h3 className={`will-change__block-title ${themeClass}`}>Гармония</h3>
+              <p className={`will-change__text ${themeClass}`}>Найдете свои ответы на том уровне, куда еще не заглядывали.
                 <br />Ощутите гармонию, удовлетворение, комфорт.</p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import './PriceOfServices.css';
 
 import useHeaderHeight from '../../hooks/useHeaderHeight';
 
-const PriceOfServices = () => {
+const PriceOfServices = ({ themeClass }) => {
 
   const navigate = useNavigate();
   const headerHeight = useHeaderHeight();
@@ -25,15 +25,15 @@ const PriceOfServices = () => {
   }, []);
 
   return (
-    <section className='price' id='price'>
+    <section className={`price ${themeClass}`} id='price'>
       <div className='price__wrapper'
         style={{ paddingTop: `${headerHeight}px` }}
       >
-        <div className='price__container' style={{ paddingTop: `${headerHeight}px` }}></div>
+        <div className={`price__container ${themeClass}`} style={{ paddingTop: `${headerHeight}px` }}></div>
 
-        <div className='price__container-text'>
-          <h2 className='price__title'>Стоимость услуг</h2>
-          <p className='price__text'>Первая коуч-сессия бесплатная,
+        <div className={`price__container-text ${themeClass}`}>
+          <h2 className={`price__title ${themeClass}`}>Стоимость услуг</h2>
+          <p className={`price__text ${themeClass}`}>Первая коуч-сессия бесплатная,
             продолжительностью 30 минут, цель которой:
             <br />-познакомиться,
             <br />-обсудить тему Вашего обращения,
@@ -45,33 +45,37 @@ const PriceOfServices = () => {
       </div>
 
       <div className='price__wrapper-block' >
-        <div className='price__block'>
-          <h3 className='price__block-title'>8 КОУЧ-СЕССИЙ</h3>
-          <p className='price__block-duration'>4500 руб. каждая</p>
-          <p className='price__block-cost'>36000 руб.</p>
-          <button className='price__block-btn price__block-btngreen hover' onClick={handleGoContacts}>
+        <div className={`price__block ${themeClass}`}>
+          <h3 className={`price__block-title ${themeClass}`}>8 КОУЧ-СЕССИЙ</h3>
+          <p className={`price__block-duration ${themeClass}`}>4500 руб. каждая</p>
+          <p className={`price__block-cost ${themeClass}`}>36000 руб.</p>
+          <button className={`price__block-btn price__block-btngreen hover ${themeClass}`}
+            onClick={handleGoContacts}>
             Хочу результатов</button>
         </div>
-        <div className='price__block'>
-          <h3 className='price__block-title'>10 КОУЧ-СЕССИЙ</h3>
-          <p className='price__block-duration'>4000 руб. каждая</p>
-          <p className='price__block-cost'>4000 руб.</p>
-          <button className='price__block-btn price__block-btnred hover' onClick={handleGoContacts}>
+        <div className={`price__block ${themeClass}`}>
+          <h3 className={`price__block-title ${themeClass}`}>10 КОУЧ-СЕССИЙ</h3>
+          <p className={`price__block-duration ${themeClass}`}>4000 руб. каждая</p>
+          <p className={`price__block-cost ${themeClass}`}>4000 руб.</p>
+          <button className={`price__block-btn price__block-btnred hover ${themeClass}`}
+            onClick={handleGoContacts}>
             Хочу полной перезагрузки</button>
         </div>
-        <div className='price__block'>
-          <h3 className='price__block-title'>РАЗОВАЯ КОУЧ-СЕССИЯ</h3>
-          <p className='price__block-duration'>длительность 60 мин.</p>
-          <p className='price__block-cost'>6000 руб.</p>
-          <button className='price__block-btn price__block-btngreen hover' onClick={handleGoContacts}>
+        <div className={`price__block ${themeClass}`}>
+          <h3 className={`price__block-title ${themeClass}`}>РАЗОВАЯ КОУЧ-СЕССИЯ</h3>
+          <p className={`price__block-duration ${themeClass}`}>длительность 60 мин.</p>
+          <p className={`price__block-cost ${themeClass}`}>6000 руб.</p>
+          <button className={`price__block-btn price__block-btngreen hover ${themeClass}`}
+            onClick={handleGoContacts}>
             Хочу попробовать</button>
         </div>
-        <div className='price__block'>
-          <h3 className='price__block-title'>РАЗОВАЯ КОНСУЛЬТАЦИЯ
+        <div className={`price__block ${themeClass}`}>
+          <h3 className={`price__block-title ${themeClass}`}>РАЗОВАЯ КОНСУЛЬТАЦИЯ
             ПСИХОЛОГА по запросу работы с психосоматикой</h3>
-          <p className='price__block-duration'>длительность 60 мин.</p>
-          <p className='price__block-cost'>6000 руб.</p>
-          <button className='price__block-btn price__block-btngreen hover' onClick={handleGoContacts} >
+          <p className={`price__block-duration ${themeClass}`}>длительность 60 мин.</p>
+          <p className={`price__block-cost ${themeClass}`}>6000 руб.</p>
+          <button className={`price__block-btn price__block-btngreen hover ${themeClass}`}
+            onClick={handleGoContacts} >
             Нужна консультация</button>
         </div>
       </div>

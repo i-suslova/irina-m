@@ -5,7 +5,8 @@ import './NotFoundPage.css';
 
 import useHeaderHeight from '../../hooks/useHeaderHeight';
 
-const NotFoundPage = () => {
+const NotFoundPage = ({ themeClass }) => {
+
   const navigate = useNavigate();
   const headerHeight = useHeaderHeight();
 
@@ -25,16 +26,17 @@ const NotFoundPage = () => {
 
   return (
     <main>
-      <section className='not-found-page'>
+      <section className={`not-found-page ${themeClass}`}>
 
         <div className='not-found-page__wrapper'
           style={{ paddingTop: `${headerHeight}px` }}>
 
-          <h1 className='not-found-page__title'>404</h1>
-          <span className='not-found-page__subtitle'>Страница не найдена</span>
+          <h1 className={`not-found-page__title ${themeClass}`}
+            style={{ paddingTop: `${headerHeight}px` }}>404</h1>
+          <span className={`not-found-page__subtitle ${themeClass}`}>Страница не найдена</span>
 
           <button
-            className='not-found-page__button hover'
+            className={`not-found-page__button hover ${themeClass}`}
             onClick={handleGoBack}
           >
             Назад

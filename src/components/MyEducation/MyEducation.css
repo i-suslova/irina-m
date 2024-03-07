@@ -10,6 +10,10 @@
     background-color: #f0eae8;
 }
 
+.my-education.dark-theme {
+    background-color: #191818;
+}
+
 .my-education__container {
     width: 100%;
     max-width: 1140px;
@@ -29,6 +33,11 @@
     margin-top: 130px;
 }
 
+.my-education__img.dark-theme {
+    filter: brightness(80%);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
 .my-education__title {
     color: #203b3b;
     font-family: 'Georgia', serif;
@@ -37,6 +46,10 @@
     line-height: 1.23;
     text-align: center;
     margin: 0 auto;
+}
+
+.my-education__title.dark-theme {
+    color: #c9cac9;
 }
 
 .my-education__line {
@@ -61,6 +74,14 @@ ul {
     line-height: 1.55;
     margin: 0;
     padding-left: 5px;
+}
+
+.my-education__text.dark-theme {
+    color: #c9cac9;
+}
+
+ul.dark-theme {
+    color: #a3a7a3;
 }
 
 @media screen and (max-width: 1170px) {

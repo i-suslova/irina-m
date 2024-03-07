@@ -4,24 +4,24 @@ import './MyEducation.css';
 
 import MyEducationPhoto from '../../images/MyEducationPhoto.png';
 
-const MyEducation = () => {
+const MyEducation = ({ themeClass }) => {
 
     return (
-        <section className='my-education' id='my-education'>
+        <section className={`my-education ${themeClass}`} id='my-education'>
 
             <div className='my-education__container'>
                 <img
-                    className='my-education__img'
+                    className={`my-education__img ${themeClass}`}
                     src={MyEducationPhoto}
                     alt='Фотография коуча'
                 />
 
                 <div className='my-education__wrapper'>
 
-                    <h2 className='my-education__title'>Обо мне</h2>
+                    <h2 className={`my-education__title ${themeClass}`}>Обо мне</h2>
                     <div className='my-education__line'></div>
 
-                    <p className='my-education__text'> Имея первое высшее математическое образование (математик-преподаватель), я много лет работала в крупной IT-компании. Начинала с должности менеджера и покинула компанию в должности руководителя информационно-аналитического подразделения.
+                    <p className={`my-education__text ${themeClass}`}> Имея первое высшее математическое образование (математик-преподаватель), я много лет работала в крупной IT-компании. Начинала с должности менеджера и покинула компанию в должности руководителя информационно-аналитического подразделения.
 
                         <br /><br /> Не смотря на то, что второе высшее психологическое образование (практическая психология) получила в 2020 году, темы развития личности, саморазвития, психология, работа с подсознанием интересовали меня всегда.
 
@@ -31,24 +31,25 @@ const MyEducation = () => {
 
                         <br /><br />Прошла обучение и закончила курс «Коучинг+психология» в Университете коучинга и психологии KachaginUiversity по программам:
                     </p>
-                    <ul>
-                        <li>Cемейный коучинг,</li>
+                    <ul className={`dark-theme ${themeClass}`}>
+                        <li >Cемейный коучинг,</li>
                         <li>Профессиональный коучинг,</li>
                         <li>Коучинг предназначения,</li>
                         <li>Бизнес-коучинг</li>
                     </ul>
 
-                    <br /><p className='my-education__text'>
+                    <br /> <p className={`my-education__text ${themeClass}`}>
                         Обучалась на авторских курсах А.О. Толоконина (к.м.н., врач, психотерапевт-сексолог-психиатр, автор метода регресса для работы с психосоматикой) и имею сертификаты: </p>
-                    <ul>
+                    <ul className={`dark-theme ${themeClass}`}>
                         <li>«Психосоматика родовых связей»,</li>
                         <li>«Исцеление»,</li>
                         <li>«Предназначение».</li>
                     </ul>
 
-                    <br /> <p className='my-education__text'>
+
+                    <br /><p className={`my-education__text ${themeClass}`}>
                         Мои Хобби: </p>
-                    <ul>
+                    <ul className={`dark-theme ${themeClass}`}>
                         <li>Йога,</li>
                         <li>Здоровый образ жизни,</li>
                         <li>Путешествия,</li>
@@ -56,6 +57,7 @@ const MyEducation = () => {
                     </ul>
                 </div>
             </div>
+
         </section>
     );
 }

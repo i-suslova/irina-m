@@ -91,7 +91,7 @@ const Questions = ({ themeClass, isDarkMode }) => {
                                 />
                             </div>
                             {openQuestions.includes(question.id) && (
-                                <p className={`questions__text ${themeClass}`}>{question.text}</p>
+                                <div className={`questions__text ${themeClass}`}>{question.text}</div>
                             )}
                         </div>
                     ))}

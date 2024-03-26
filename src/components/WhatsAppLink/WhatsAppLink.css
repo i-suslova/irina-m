@@ -1,126 +1,127 @@
 .whats-app-link {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fcf7f7;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf7f7;
 }
 
 .whats-app-link.dark-theme {
-    background-color: #211d1d;
+  background-color: #01133e;
 }
 
 .whats-app-link__title {
-    width: 100%;
-    width: 400px;
-    color: #203b3b;
-    font-size: 26px;
-    line-height: 1.35;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    background-color: rgba(240, 146, 139, 0.2);
-    z-index: 10;
-    margin-top: 30px;
+  width: 100%;
+  max-width: 500px;
+  color: #203b3b;
+  font-size: 26px;
+  line-height: 1.35;
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  text-align: center;
+  margin: 30px auto 0;
+  background-color: rgb(126 197 134 / 20%);
+  z-index: 10;
 }
 
 .whats-app-link__title.dark-theme {
-    color: #c9cac9;
-    background-color: rgb(228 215 214 / 20%);
+  color: #c9cac9;
+  background-color: rgb(228 215 214 / 20%);
 }
 
 .whats-app__wrapper {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 60px;
-    gap: 70px;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  gap: 70px;
 }
 
 .whats-app-link__container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-image: url("../../images/fonLight.png");
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-color: #57887f;
-    filter: blur(2px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url("../../images/fonLight.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #58bd09;
+  filter: blur(2px);
+  background-size: cover;
 }
 
 .whats-app-link__container.dark-theme {
-    background-image: url("../../images/fonDark.jpg");
+  background-image: url("../../images/fonDark.png");
 }
 
 .whats-app-link__text {
-    width: 500px;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    color: #471c1c;
-    text-align: left;
-    font-size: 20px;
-    line-height: 1.55;
-    margin: 0;
-    z-index: 10;
-    text-align: center;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  color: #471c1c;
+  text-align: left;
+  font-size: 20px;
+  line-height: 1.55;
+  margin: 0 auto;
+  z-index: 10;
+  text-align: center;
 }
 
 .whats-app-link__text.dark-theme {
-    color: #c9cac9;
+  color: #c9cac9;
 }
 
 .whats-app-link__btn {
-    width: 400px;
-    height: 65px;
-    margin: 0;
-    border: 0;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 400;
-    padding: 16px;
-    text-decoration: none;
-    border-radius: 30px;
-    color: #fff;
-    background-color: #27d061;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 400px;
+  height: 65px;
+  margin: 0;
+  border: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 400;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #27d061;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .whats-app-link__btn.dark-theme {
-    filter: brightness(90%);
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  filter: brightness(90%);
+  border: 1px solid #93fa91;
 }
 
 @media screen and (max-width: 610px) {
-    .whats-app__wrapper {
-        gap: 30px;
-    }
+  .whats-app__wrapper {
+    gap: 30px;
+  }
 
-    .whats-app-link__btn {
-        width: 270px;
-        height: 45px;
-    }
+  .whats-app-link__btn {
+    width: 270px;
+    height: 45px;
+  }
 
-    .whats-app-link__text {
-        max-width: 270px;
-        font-size: 18px;
-        line-height: 1.25;
-    }
+  .whats-app-link__text {
+    max-width: 310px;
+    font-size: 18px;
+    line-height: 1.25;
+  }
 
-    .whats-app-link__title {
-        max-width: 270px;
-        font-size: 20px;
-    }
+  .whats-app-link__title {
+    max-width: 310px;
+    font-size: 20px;
+  }
 }

@@ -8,25 +8,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-#root {
-  margin: 0;
-  padding: 0;
-  background-color: #f0eae8;
-}
-
 html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-
-/* Sections
-   ========================================================================== */
-
-/**
- * Remove the margin in all browsers.
- */
 
 body {
   margin: 0;
@@ -49,14 +36,6 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
-
-/* Grouping content
-   ========================================================================== */
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 
 hr {
   box-sizing: content-box;

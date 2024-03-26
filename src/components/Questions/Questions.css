@@ -1,144 +1,144 @@
 .questions {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    background-color: #f0eae8;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  background-color: #f0eae8;
 }
 
 .questions.dark-theme {
-    background-color: #211d1d;
+  background-color: #01133e;
 }
 
 .questions__wrapper {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .questions__title {
-    font-family: 'Georgia', serif;
-    font-weight: 400;
-    color: #203b3b;
-    font-size: 42px;
-    line-height: 1.23;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    padding-bottom: 40px;
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  color: #203b3b;
+  font-size: 42px;
+  line-height: 1.23;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 40px;
 }
 
 .questions__title.dark-theme {
-    color: #c9cac9;
+  color: #c9cac9;
 }
 
 .questions__blocks-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .questions__block {
-    width: 100%;
-    max-width: 1140px;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
 }
 
 .questions__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    margin: 0;
-    border-top: 1px solid #eee;
-    align-self: stretch;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0;
+  border-top: 1px solid #eee;
+  align-self: stretch;
+  cursor: pointer;
 }
 
 .questions__header.dark-theme {
-    border-top: 1px solid #191818;
+  border-top: 1px solid #021c5a;
 }
 
 .questions__block-title {
-    line-height: 1.35;
-    color: #203b3b;
-    font-size: 18px;
-    font-family: 'Georgia', serif;
-    box-sizing: content-box;
-    font-weight: 700;
-    padding: 27px 50px 27px 0;
-    margin: 0;
+  line-height: 1.35;
+  color: #203b3b;
+  font-size: 18px;
+  font-family: "Georgia", serif;
+  box-sizing: content-box;
+  font-weight: 700;
+  padding: 27px 50px 27px 0;
+  margin: 0;
 }
 
 .questions__block-title.dark-theme {
-    color: #c9cac9;
+  color: #c9cac9;
 }
 
 .questions__block-title:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .questions__text {
-    font-family: 'OpenSans', serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    color: #203b3b;
-    margin: 0;
-    padding: 0 62px 0 12px;
-    border: 0;
-    transition: transform 0.9s ease;
+  font-family: "OpenSans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #203b3b;
+  margin: 0;
+  padding: 0 62px 0 12px;
+  border: 0;
+  transition: transform 0.9s ease;
 }
 
 .questions__text.dark-theme {
-    color: #c9cac9;
+  color: #c9cac9;
 }
 
 p {
-    margin: 5px 0 20px 0;
+  margin: 5px 0 20px 0;
 }
 
 .questions__img-plus {
-    transition: transform 0.5s ease;
-    width: 50px;
-    height: 50px;
+  transition: transform 0.5s ease;
+  width: 50px;
+  height: 50px;
 }
 
 .questions__header.active .questions__img-plus {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 1170px) {
-    .questions__wrapper {
-        max-width: 968px;
-        padding: 90px 0;
-    }
+  .questions__wrapper {
+    max-width: 968px;
+    padding: 90px 0;
+  }
 }
 
 @media screen and (max-width: 985px) {
-    .questions__wrapper {
-        max-width: 768px;
-        padding: 80px 0;
-    }
+  .questions__wrapper {
+    max-width: 768px;
+    padding: 80px 0;
+  }
 }
 
 @media screen and (max-width: 770px) {
-    .questions__wrapper {
-        max-width: 500px;
-        padding: 60px 0;
-    }
+  .questions__wrapper {
+    max-width: 500px;
+    padding: 60px 0;
+  }
 }
 
 @media screen and (max-width: 520px) {
-    .questions__wrapper {
-        max-width: 320px;
-        padding: 40px 0;
-    }
+  .questions__wrapper {
+    max-width: 320px;
+    padding: 40px 0;
+  }
 }

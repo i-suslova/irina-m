@@ -1,3 +1,13 @@
-# https://www.robotstxt.org/robotstxt.html
+# Для Яндекса
+User-agent: Yandex
+Disallow: /*utm_
+
 User-agent: *
-Disallow:
+Disallow: /*?*
+Disallow: /*%
+Disallow: /index.php
+Disallow: /*?page=
+Disallow: /*&page=
+Allow: /*utm_
+
+

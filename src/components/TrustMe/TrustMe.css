@@ -1,157 +1,157 @@
 .trust-me {
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fcf7f7;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcf7f7;
 }
 
 .trust-me.dark-theme {
-    background-color: #383737;
+  background-color: #001850;
 }
 
 .trust-me__container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 154px 0 80px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 100px;
-    align-items: center
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 154px 0 80px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
 }
 
 .trust-me__img {
-    width: 460px;
-    height: 560px;
-    border-radius: 5px;
-    object-fit: cover;
-    box-shadow: 0 0 25px rgb(104 99 99);
+  width: 460px;
+  height: 560px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgb(104 99 99);
 }
 
 .trust-me__img.dark-theme {
-    filter: brightness(80%);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  filter: brightness(80%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 .trust-me__title {
-    color: #203b3b;
-    font-family: 'Georgia', serif;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 1.23;
-    text-align: center;
-    margin: 0 auto;
+  color: #203b3b;
+  font-family: "Georgia", serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.23;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .trust-me__title.dark-theme {
-    color: #d7d7d7;
+  color: #d7d7d7;
 }
 
 .trust-me__line {
-    max-width: 50px;
-    width: 100%;
-    height: 3px;
-    background-color: #666;
-    margin: 25px auto 40px;
+  max-width: 50px;
+  width: 100%;
+  height: 3px;
+  background-color: #666;
+  margin: 25px auto 40px;
 }
 
 .trust-me__wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .trust-me__block {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .trust-me__number {
-    font-weight: 900;
-    font-size: 1em;
-    line-height: 1.55;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    padding-right: 5px;
+  font-weight: 900;
+  font-size: 1em;
+  line-height: 1.55;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-right: 5px;
 }
 
 .trust-me__number.dark-theme {
-    color: #d7d7d7;
+  color: #d7d7d7;
 }
 
 .trust-me__text {
-    font-family: 'Georgia', serif;
-    font-weight: 400;
-    color: rgb(32, 59, 59);
-    font-size: 1em;
-    line-height: 1.55;
-    text-align: left;
-    margin: 0;
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  color: rgb(32, 59, 59);
+  font-size: 1em;
+  line-height: 1.55;
+  text-align: left;
+  margin: 0;
 }
 
 .trust-me__text.dark-theme {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 @media screen and (max-width: 1170px) {
-    .trust-me__container {
-        max-width: 968px;
-        gap: 58px;
-    }
+  .trust-me__container {
+    max-width: 968px;
+    gap: 58px;
+  }
 
-    .trust-me__img {
-        width: 380px;
-    }
+  .trust-me__img {
+    width: 380px;
+  }
 
-    .trust-me__title {
-        font-size: 30px;
-    }
+  .trust-me__title {
+    font-size: 30px;
+  }
 
-    .trust-me__line {
-        margin: 25px auto;
-    }
+  .trust-me__line {
+    margin: 25px auto;
+  }
 }
 
 @media screen and (max-width: 985px) {
-    .trust-me__container {
-        max-width: 760px;
-        flex-direction: column-reverse;
-    }
+  .trust-me__container {
+    max-width: 760px;
+    flex-direction: column-reverse;
+  }
 
-    .trust-me__img {
-        width: 600px;
-    }
+  .trust-me__img {
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 770px) {
-    .trust-me__container {
-        max-width: 590px;
-    }
+  .trust-me__container {
+    max-width: 590px;
+  }
 
-    .trust-me__img {
-        width: 460px;
-    }
+  .trust-me__img {
+    width: 460px;
+  }
 }
 
 @media screen and (max-width: 610px) {
-    .trust-me__container {
-        max-width: 310px;
-        padding: 220px 0 60px;
-        row-gap: 25px;
-    }
+  .trust-me__container {
+    max-width: 310px;
+    padding: 220px 0 60px;
+    row-gap: 25px;
+  }
 
-    .trust-me__title {
-        font-size: 24px;
-    }
+  .trust-me__title {
+    font-size: 24px;
+  }
 
-    .trust-me__img {
-        width: 280px;
-        height: 400px;
-    }
+  .trust-me__img {
+    width: 280px;
+    height: 400px;
+  }
 }

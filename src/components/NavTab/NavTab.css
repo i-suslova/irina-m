@@ -8,15 +8,15 @@
   list-style-type: none;
   padding: 0;
   margin: 0 auto;
-  background-color: #57887f;
+  background-color: #58bd09;
 }
 
 .nav-tab__list.dark-theme {
-  background-color: #6d8480;
+  background-color: #021135;
 }
 
 .nav-tab__item {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 13px;
   font-weight: 700;
 }
@@ -24,18 +24,18 @@
 .nav-tab__link {
   color: #ffffff;
   text-decoration: none;
-  background: #57887f;
+  background-color: #58bd09;
   border: none;
   cursor: default;
 }
 
 .nav-tab__link.dark-theme {
-  background-color: #6d8480;
-  color: #383737;
+  background-color: #021135;
+  color: #c6c8c7;
 }
 
 .nav-tab__link:hover {
-  color: #383737;
+  color: #001850;
 }
 
 .nav-tab__link.dark-theme:hover {

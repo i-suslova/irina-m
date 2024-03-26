@@ -9,7 +9,7 @@
 }
 
 .privacy-policy.dark-theme {
-  background-color: #383737;
+  background-color: #001850;
 }
 
 .privacy-policy__wrapper {
@@ -58,6 +58,12 @@
   text-align: center;
   text-decoration: none;
   margin: 10px auto 10px;
+  padding: 15px 25px;
+  font-weight: 600;
+  position: relative;
+  border: 2px solid #3a3835;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #52514e;
 }
 
 .privacy-policy__button.dark-theme {

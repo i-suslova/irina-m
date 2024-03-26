@@ -7,11 +7,10 @@
   flex-direction: column;
   justify-content: center;
   place-items: center;
-  background-color: #e4e2e5;
 }
 
 .not-found-page.dark-theme {
-  background-color: #383737;
+  background-color: #001850;
 }
 
 .not-found-page__wrapper {
@@ -62,6 +61,12 @@
   text-align: center;
   text-decoration: none;
   margin: 10px 0 10px;
+  padding: 15px 25px;
+  font-weight: 600;
+  position: relative;
+  border: 2px solid #3a3835;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #52514e;
 }
 
 .not-found-page__button.dark-theme {

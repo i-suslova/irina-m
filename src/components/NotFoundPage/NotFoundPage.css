@@ -1,16 +1,11 @@
 .not-found-page {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   place-items: center;
-}
-
-.not-found-page.dark-theme {
-  background-color: #001850;
 }
 
 .not-found-page__wrapper {
